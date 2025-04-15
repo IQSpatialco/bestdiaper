@@ -63,7 +63,7 @@
 
         .header-content {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
         }
 
@@ -81,69 +81,6 @@
             font-size: 1.8rem;
             font-weight: 600;
             color: var(--text-color);
-        }
-
-        /* Navigation */
-        nav {
-            display: flex;
-            align-items: center;
-        }
-
-        .nav-dropdown {
-            position: relative;
-            margin-left: 20px;
-        }
-
-        .dropdown-btn {
-            background-color: var(--secondary-color);
-            color: var(--text-color);
-            padding: 10px 15px;
-            border: none;
-            border-radius: var(--border-radius);
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-        }
-
-        .dropdown-btn:hover {
-            background-color: #f0e9e4;
-        }
-
-        .dropdown-btn svg {
-            margin-left: 8px;
-            width: 12px;
-            height: 12px;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #ffffff;
-            min-width: 200px;
-            box-shadow: var(--box-shadow);
-            border-radius: var(--border-radius);
-            z-index: 1;
-            top: 45px;
-            right: 0;
-        }
-
-        .dropdown-content a {
-            color: var(--text-color);
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-        }
-
-        .dropdown-content a:hover {
-            background-color: var(--secondary-color);
-        }
-
-        .nav-dropdown:hover .dropdown-content {
-            display: block;
         }
 
         /* Description */
@@ -202,17 +139,6 @@
 
         /* Responsive adjustments */
         @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            nav {
-                margin-top: 15px;
-                width: 100%;
-                justify-content: flex-end;
-            }
-
             .description {
                 font-size: 1rem;
                 padding: 0 15px;
@@ -232,23 +158,6 @@
                     <img src="images/bestdiaper-logo.png" alt="BestDiaper Logo" class="logo">
                     <h1 class="site-title">BestDiaper</h1>
                 </div>
-                <nav>
-                    <div class="nav-dropdown">
-                        <button class="dropdown-btn">
-                            Learn About Diaper Types
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="/diaper-types/swaddlers-vs-baby-dry">Swaddlers vs Baby-Dry</a>
-                            <a href="/diaper-types/360-fit-diapers">360 Fit Diapers</a>
-                            <a href="/diaper-types/absorbency-guide">Absorbency Guide</a>
-                            <a href="/diaper-types/materials-guide">Materials Guide</a>
-                            <a href="/diaper-types/size-weight-guide">Size & Weight Guide</a>
-                        </div>
-                    </div>
-                </nav>
             </div>
         </div>
     </header>
