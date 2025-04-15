@@ -9,7 +9,7 @@
     <meta property="og:title" content="BestDiaper - Find Your Perfect Diaper Match">
     <meta property="og:description" content="Take our quick quiz to find the perfect diaper for your baby based on age, sensitivity, budget, and more.">
     <meta property="og:image" content="images/bestdiaper-logo.png">
-    <meta property="og:url" content="https://bestdiaper.co">
+    <meta property="og:url" content="https://bestdiaper.com">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <title>BestDiaper - Find Your Perfect Diaper Match</title>
@@ -19,7 +19,7 @@
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.co/gtag/js?id=G-WZ326Y6E2K"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WZ326Y6E2K"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -29,193 +29,75 @@
     </script>
 
     <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.co/pagead/js/adsbygoogle.js?client=ca-pub-6348225556465874" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6348225556465874" crossorigin="anonymous"></script>
 
     <style>
-        /* Base styling */
-        :root {
-            --primary-color: #ff9966; /* Orange accent */
-            --secondary-color: #f8f4f1; /* Soft background */
-            --text-color: #333333;
-            --light-text: #666666;
-            --border-radius: 12px;
-            --box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        }
-
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-
+        
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: #ffffff;
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header styling */
-        header {
-            padding: 20px 0;
-            background-color: #ffffff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo {
-            height: 40px;
-            margin-right: 10px;
-        }
-
-        .site-title {
-            font-size: 1.8rem;
-            font-weight: 600;
-            color: var(--text-color);
-        }
-
-        /* Description */
-        .description {
-            max-width: 800px;
-            margin: 20px auto 30px;
+        
+        .ad-container {
+            width: 100%;
             text-align: center;
-            font-size: 1.1rem;
-            line-height: 1.7;
-            color: #555;
-            padding: 0 20px;
-        }
-
-        /* App container */
-        .app-container {
-            background-color: white;
-            border-radius: var(--border-radius);
+            padding: 10px 0;
+            background-color: #f9f9f9;
             overflow: hidden;
-            box-shadow: var(--box-shadow);
-            margin-bottom: 40px;
         }
-
-        /* Iframe styling */
+        
+        .iframe-container {
+            width: 100%;
+            height: calc(100vh - 120px); /* Adjust based on ad container heights */
+        }
+        
         iframe {
             width: 100%;
-            height: 90vh;
+            height: 100%;
             border: none;
             display: block;
-        }
-
-        /* Ad containers */
-        .ad-container {
-            margin: 20px 0;
-            text-align: center;
-            overflow: hidden;
-            width: 100%;
-            background-color: #f9f9f9;
-            border-radius: var(--border-radius);
-            padding: 15px;
-        }
-
-        .ad-container-horizontal {
-            height: auto;
-            min-height: 90px;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: #666;
-            border-top: 1px solid #eee;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .description {
-                font-size: 1rem;
-                padding: 0 15px;
-            }
-
-            iframe {
-                height: 80vh;
-            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo-container">
-                    <img src="images/bestdiaper-logo.png" alt="BestDiaper Logo" class="logo">
-                    <h1 class="site-title">BestDiaper</h1>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="container">
-        <p class="description">
-            BestDiaper helps you find the perfect diaper for your baby through a personalized quiz. Answer a few simple questions about your baby's age, sensitivity, budget preferences, and more to get tailored recommendations from our comprehensive diaper database.
-        </p>
-
-        <!-- Ad unit below description -->
-        <div class="ad-container ad-container-horizontal">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-6348225556465874"
-                 data-ad-slot="YOUR_AD_SLOT_ID_1"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
-
-        <div class="app-container">
-            <!-- Embed App via iframe -->
-            <iframe 
-                title="BestDiaper Quiz Application"
-                src="https://your-app-url-here.co" 
-                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; usb; vr; xr-spatial-tracking" 
-                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts">
-            </iframe>
-        </div>
-
-        <!-- Ad unit below app container -->
-        <div class="ad-container ad-container-horizontal">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-6348225556465874"
-                 data-ad-slot="YOUR_AD_SLOT_ID_2"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
-
-        <footer>
-            &copy; 2025 BestDiaper. All rights reserved.
-        </footer>
+    <!-- Top ad container -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6348225556465874"
+             data-ad-slot="YOUR_AD_SLOT_ID_1"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    
+    <!-- App iframe -->
+    <div class="iframe-container">
+        <iframe 
+            title="BestDiaper Quiz Application"
+            src="https://diapers-unveiled-jose229.replit.app" 
+            allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; usb; vr; xr-spatial-tracking" 
+            sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts">
+        </iframe>
+    </div>
+    
+    <!-- Bottom ad container -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6348225556465874"
+             data-ad-slot="YOUR_AD_SLOT_ID_2"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </div>
 
     <!-- Structured data for SEO -->
@@ -224,7 +106,7 @@
         "@context": "https://schema.org",
         "@type": "WebApplication",
         "name": "BestDiaper",
-        "url": "https://bestdiaper.co",
+        "url": "https://bestdiaper.com",
         "description": "BestDiaper helps parents find the perfect diaper for their baby through a personalized quiz based on age, sensitivity, budget, and more.",
         "applicationCategory": "LifestyleApplication",
         "offers": {
