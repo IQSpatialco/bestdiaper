@@ -8,15 +8,15 @@
     <meta name="author" content="BestDiaper">
     <meta property="og:title" content="BestDiaper - Find Your Perfect Diaper Match">
     <meta property="og:description" content="Take our quick quiz to find the perfect diaper for your baby based on age, sensitivity, budget, and more.">
-    <meta property="og:image" content="images/bestdiaper-logo.png">
-    <meta property="og:url" content="https://bestdiaper.com">
+    <meta property="og:image" content="images/bestdiaper-logo.png"> <!-- Ensure this path is correct -->
+    <meta property="og:url" content="https://bestdiaper.co"> <!-- Corrected domain -->
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <title>BestDiaper - Find Your Perfect Diaper Match</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Ensure this path is correct -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> <!-- Ensure this path is correct -->
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WZ326Y6E2K"></script>
@@ -24,7 +24,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-WZ326Y6E2K');
     </script>
 
@@ -37,22 +36,36 @@
             padding: 0;
             box-sizing: border-box;
         }
+
+        html, body {
+            height: 100%;
+            overflow: hidden; /* Prevent body scroll */
+            display: flex;
+            flex-direction: column;
+        }
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f9f9f9; /* Added a light background */
         }
         
         .ad-container {
             width: 100%;
             text-align: center;
             padding: 10px 0;
-            background-color: #f9f9f9;
+            background-color: #f0f0f0; /* Slightly different background for ads */
             overflow: hidden;
+            flex-shrink: 0; /* Prevent shrinking */
+            min-height: 60px; /* Give ads some minimum space */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .iframe-container {
             width: 100%;
-            height: calc(100vh - 120px); /* Adjust based on ad container heights */
+            flex-grow: 1; /* Take remaining vertical space */
+            overflow: hidden; /* Hide potential iframe scrollbars if needed */
         }
         
         iframe {
@@ -61,15 +74,35 @@
             border: none;
             display: block;
         }
+
+        footer {
+            padding: 15px 0;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #666;
+            background-color: #e9e9e9;
+            border-top: 1px solid #ddd;
+            flex-shrink: 0; /* Prevent shrinking */
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <!-- Top ad container -->
     <div class="ad-container">
         <ins class="adsbygoogle"
-             style="display:block"
+             style="display:block; width:100%; height:90px;" <!-- Example dimensions -->
              data-ad-client="ca-pub-6348225556465874"
-             data-ad-slot="YOUR_AD_SLOT_ID_1"
+             data-ad-slot="YOUR_AD_SLOT_ID_1" <!-- REPLACE THIS -->
              data-ad-format="auto"
              data-full-width-responsive="true"></ins>
         <script>
@@ -90,9 +123,9 @@
     <!-- Bottom ad container -->
     <div class="ad-container">
         <ins class="adsbygoogle"
-             style="display:block"
+             style="display:block; width:100%; height:90px;" <!-- Example dimensions -->
              data-ad-client="ca-pub-6348225556465874"
-             data-ad-slot="YOUR_AD_SLOT_ID_2"
+             data-ad-slot="YOUR_AD_SLOT_ID_2" <!-- REPLACE THIS -->
              data-ad-format="auto"
              data-full-width-responsive="true"></ins>
         <script>
@@ -100,18 +133,31 @@
         </script>
     </div>
 
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 BestDiaper. All rights reserved. | <a href="https://bestdiaper.co/privacy">Privacy Policy</a>
+        <!-- Updated link to point to the site's privacy path -->
+    </footer>
+
     <!-- Structured data for SEO -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebApplication",
         "name": "BestDiaper",
-        "url": "https://bestdiaper.com",
+        "url": "https://bestdiaper.co", /* Corrected domain */
         "description": "BestDiaper helps parents find the perfect diaper for their baby through a personalized quiz based on age, sensitivity, budget, and more.",
         "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "All",
+        "browserRequirements": "Requires JavaScript",
         "offers": {
             "@type": "Offer",
-            "price": "0"
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "BestDiaper"
         }
     }
     </script>
